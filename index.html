@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles.css">
+<title>Survey Form</title>
+</head>
+<body>
+<div class="main">
+<img src="./images/logo.png" height="180px" alt="Tomb Raider logo" id="title">
+<h1 id="title">Survey Form</h1>
+<p id="description">Thank you for taking the time to help us improve our games.</p>
+<form method="post" id="survey-form">
+<fieldset>
+<label for="name" id="name-label">Name <input type="text" id="name" placeholder="Enter your name" required></label>
+<label for="email" id="email-label">E-mail <input type="email" id="email" placeholder="Enter your E-mail address" required></label>
+<label for="age" id="number-label">Age <div class="optional">(optional)</div> <input type="number" id="number" name="age" min="13" max="120" placeholder="Age"></label>
+<label>Which is your preferred gaming system?</label>
+  <select id="dropdown" name="console">
+  <option value="">Select one</option>
+  <option value="1">PlayStation</option>
+  <option value="2">Xbox</option>
+  <option value="3">Pc</option>
+  <option value="4">Switch</option>
+  </select>
+</fieldset>
+<fieldset>
+  <legend>Which is your favourite timeline?</legend>
+<label><input type="radio" name="TR-series" class="inline" value="classic" checked>The Classic games (Tomb Raider 1 - Angel of Darkness)</label>
+<label><input type="radio" name="TR-series" class="inline" value="lau">The Legend, Anniversary & Underworld Trilogy</label>
+<label><input type="radio" name="TR-series" class="inline" value="survivor">The Reboot Series (Tomb Raider - Shadow of the Tomb Raider)</label> 
+</fieldset>
+<fieldset>
+<legend>What are your favourite aspects? <div class="optional">(Check all that apply)</div></legend>
+<label for="exploration"><input class="inline" type="checkbox" id="exploration" value="exploration">Exploration</input></label>
+<label for="Platforming"><input class="inline" type="checkbox" id="platforming" value="platforming">Platforming</input></label>
+<label for="combat"><input class="inline" type="checkbox" id="combat" value="combat">Combat</input></label>
+<label for="puzzle-solving"><input class="inline" type="checkbox" id="puzzle-solving" value="puzzle-solving">Puzzle-solving</input></label>
+<label for="ambiance"><input class="inline" type="checkbox" id="ambiance" value="ambiance">Ambiance</input></label>
+<label for="story"><input class="inline" type="checkbox" id="story" value="story">Story</input></label>
+</fieldset>
+<fieldset>
+<legend>How can we improve?</legend>
+<textarea rows="3" placeholder="Please type any suggestions here."></textarea>
+<label for="terms-and-conditions"><input type="checkbox" id="terms-and-conditions" value="terms-and-conditions" required class="inline">I have read and agree to the <a href="#" onclick="return false;">terms and conditions.</a></input></label>
+</fieldset> 
+<input type="submit" id="submit">
+</form>
+</div>
+</body>
+</html>
